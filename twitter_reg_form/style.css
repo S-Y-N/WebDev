@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #27292b;
+}
+
+.login-form {
+    background: #fff;
+    padding: 30px 120px;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border: 1px solid rgb(134, 134, 134);
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.login-form button:hover {
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.53);
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.53);
+}
+
+.login-form hr {
+    border: 0;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 5px;
+}
+
+.login-form span {
+    display: block;
+    width: 40px;
+    margin: auto;
+    background: #fff;
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+.login-form input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgb(134, 134, 134);
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+::placeholder {
+    font-weight: 500;
+    color: rgb(88, 80, 80);
+    font-size: 16px;
+    text-align: center;
+}
+
+#next_btn {
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-form p {
+    font-size: 14px;
+    color: #555;
+    margin: 40px 0 20px;
+}
+
+.login-form p a {
+    text-decoration: none;
+    color: rgb(46, 143, 255);
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+    color: rgb(6, 76, 156);
+}
