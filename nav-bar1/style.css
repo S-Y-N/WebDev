@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url(/img/shu-Ukraine-Kiev-MonumentIndependence_1088907020-1440x823-EDITORIAL.jpg);*/
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.container {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .logo a {
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+
+.container .links {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.links li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.container .toggle {
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background-color: rgb(255, 123, 0);
+}
+
+/*Dropdown menu in toggle button*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 1.5rem;
+    top: 60px;
+    height: 0;
+    padding: 10px 0;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+    background: rgba(255, 255, 255, .1);
+}
+
+.dropdown_menu li {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu li a {
+    font-size: 1.2rem;
+}
+
+.dropdown_menu li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown_menu .btn {
+    width: 80%;
+    text-align: center;
+}
+
+/*News - testing blocks*/
+#news {
+    color: #fff;
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#news h1 {
+    font-size: 3rem;
+    padding-bottom: 1em;
+}
+
+#news p {
+    font-size: 1.5rem;
+    margin: 0 50px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 780px) {
+
+    .container .links,
+    .container .btn {
+        display: none;
+    }
+
+    .container .toggle {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
