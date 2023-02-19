@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: rgb(115, 212, 241);
+    background-image: linear-gradient(to left, #458494, #D7E08E);
+}
+
+canvas {
+    border: 5px solid #2e2e2e;
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+    background-image: url(assets/img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+#menu {
+    /*for testing css*/
+    /*display: block;*/
+    display: none;
+    margin: 50px auto;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 50%);
+    z-index: 5;
+}
+
+button {
+    background-color: #458494;
+    padding: 5px 8px;
+    margin-top: 5px;
+    border: 1px solid #2e555f;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#play {
+    display: flex;
+    margin: 40px auto;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: relative;
+    right: 180px;
+    top: 90px;
+}
+
+#pause {
+    display: flex;
+    margin: 40px auto;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: relative;
+    left: 180px;
+    top: 160px
+}
+
+button:hover {
+    background-color: #24515c;
+    font-weight: 600;
+}
+
+#current-score {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+
+}
